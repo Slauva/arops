@@ -213,11 +213,11 @@ const parseCondition = (
  * A mapping of token expressions to their respective evaluation functions.
  * Each function applies a specific comparison operation to an array of numbers:
  *
- * @key ls - Function less
- * @key le - Function less or equal
- * @key gr - Function greater
- * @key ge - Function greater or equal
- * @key eq - Function equal
+ * @param ls - Function less
+ * @param le - Function less or equal
+ * @param gr - Function greater
+ * @param ge - Function greater or equal
+ * @param eq - Function equal
  *
  * @type {Record<"gr" | "ge" | "ls" | "le" | "eq", (array: Number[], value: Number) => Boolean[]>}
  */

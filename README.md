@@ -1,12 +1,18 @@
+# @slauva/arops
+
+A simple and lightweight library of utilities for working with arrays
+
 ## :toolbox: Functions
 
-- [less](#gear-less)
-- [greater](#gear-greater)
-- [equal](#gear-equal)
-- [all](#gear-all)
-- [some](#gear-some)
-- [ls](#gear-ls)
-- [condition](#gear-condition)
+- [@slauva/arops](#slauvaarops)
+  - [:toolbox: Functions](#toolbox-functions)
+    - [:gear: less](#gear-less)
+    - [:gear: greater](#gear-greater)
+    - [:gear: equal](#gear-equal)
+    - [:gear: all](#gear-all)
+    - [:gear: some](#gear-some)
+    - [:gear: ls](#gear-ls)
+    - [:gear: condition](#gear-condition)
 
 ### :gear: less
 
