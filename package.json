@@ -8,6 +8,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup",
+    "tsdoc": "tsdoc --src=src/logic.ts",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:ci": "jest --ci",
@@ -37,6 +38,7 @@
     "lint-staged": "^15.2.10",
     "prettier": "^3.4.1",
     "ts-jest": "^29.2.5",
+    "tsdoc-markdown": "^0.6.3",
     "tsup": "^8.3.5",
     "typescript": "^5.7.2"
   },
