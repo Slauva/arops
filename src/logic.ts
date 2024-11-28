@@ -6,11 +6,13 @@ import { TokenError } from "./error";
  * equal to a given value (if `eq` is true) or strictly less than the value (if `eq` is false).
  *
  * @example
+ * ```js
  * > less([1, 2, 3, 4], 3)
  * [true, true, false, false]
  *
  * > less([1, 2, 3, 4], 3, true)
  * [true, true, true, false]
+ * ```
  *
  * @param {Array<Number>} array - The array of numbers to be compared.
  * @param {Number} value - The value each element of the array is compared against.
@@ -38,11 +40,13 @@ export const less = (
  * equal to a given value (if `eq` is true) or strictly greater than the value (if `eq` is false).
  *
  * @example
+ * ```js
  * > greater([1, 2, 3, 4], 3)
  * [false, false, false, true]
  *
  * > greater([1, 2, 3, 4], 3, true)
  * [false, false, true, true]
+ * ```
  *
  * @param {Array<Number>} array - The array of numbers to be compared.
  * @param {Number} value - The value each element of the array is compared against.
@@ -69,8 +73,10 @@ export const greater = (
  * Returns an array indicating whether each element of the input array is equal to a given value.
  *
  * @example
+ * ```js
  * > equal([1, 2, 1, 3], 1)
  * [true, false, true, false]
+ *```
  *
  * @param {Array<Number>} array - The array of numbers to be compared.
  * @param {Number} value - The value each element of the array is compared against.
@@ -85,11 +91,13 @@ export const equal = (array: Array<Number>, value: Number): Array<Boolean> => {
  * Checks if all elements in the input array are `true`.
  *
  * @example
+ * ```js
  * > all([true, true, true])
  * true
  *
  * > some([false, true, true])
  * false
+ * ```
  *
  * @param {Array<Boolean>} array - The array of booleans to be evaluated.
  * @returns {Boolean} Returns `true` if all elements in `array` are `true`, otherwise `false`.
@@ -102,11 +110,13 @@ export const all = (array: Array<Boolean>): Boolean => {
  * Checks if at least one element in the input array is `true`.
  *
  * @example
+ * ```js
  * > some([true, false, false])
  * true
  *
  * > some([false, false, false])
  * false
+ * ```
  *
  * @param {Array<Boolean>} array - The array of booleans to be evaluated.
  * @returns {Boolean} Returns `true` if at least one element in `array` is `true`, otherwise `false`.
@@ -170,9 +180,11 @@ type TokenValues = (typeof l_token)[Token];
  * the `r_token` mapping applies.
  *
  * @example
+ * ```js
  * > const out = parseCondition("1 < x")
  * > console.log(out)
  * {value: 1, expression: "gr"}
+ * ```
  *
  * @param {string} condition - A string representing the condition to parse.
  * @returns {{value: number, expression: TokenValues}} An object containing the numerical value found
@@ -221,7 +233,7 @@ const parseCondition = (
  *
  * @type {Record<"gr" | "ge" | "ls" | "le" | "eq", (array: Number[], value: Number) => Boolean[]>}
  */
-export const expr = {
+const expr = {
   ls: (array: Array<Number>, value: Number) => less(array, value, false),
   le: (array: Array<Number>, value: Number) => less(array, value, true),
   gr: (array: Array<Number>, value: Number) => greater(array, value, false),
@@ -243,9 +255,11 @@ export const expr = {
  * the comparison to either side.
  *
  * @example
+ * ```js
  * > const out = condition([0, 1, 2, 3], "1 <= x, x < 3")
  * > console.log(out)
  * [false, true, true, false]
+ * ```
  *
  * @param {Array<Number>} array - The array of numbers to evaluate against the conditions.
  * @param {string} conditions - A comma-separated string containing conditions to evaluate.

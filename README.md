@@ -11,7 +11,6 @@ A simple and lightweight library of utilities for working with arrays
     - [:gear: equal](#gear-equal)
     - [:gear: all](#gear-all)
     - [:gear: some](#gear-some)
-    - [:gear: ls](#gear-ls)
     - [:gear: condition](#gear-condition)
 
 ### :gear: less
@@ -32,11 +31,13 @@ Parameters:
 
 Examples:
 
+```js
 > less([1, 2, 3, 4], 3)
-> [true, true, false, false]
+[true, true, false, false]
 
 > less([1, 2, 3, 4], 3, true)
-> [true, true, true, false]
+[true, true, true, false]
+```
 
 ### :gear: greater
 
@@ -56,11 +57,13 @@ Parameters:
 
 Examples:
 
+```js
 > greater([1, 2, 3, 4], 3)
-> [false, false, false, true]
+[false, false, false, true]
 
 > greater([1, 2, 3, 4], 3, true)
-> [false, false, true, true]
+[false, false, true, true]
+```
 
 ### :gear: equal
 
@@ -77,8 +80,10 @@ Parameters:
 
 Examples:
 
+```js
 > equal([1, 2, 1, 3], 1)
-> [true, false, true, false]
+[true, false, true, false]
+```
 
 ### :gear: all
 
@@ -94,11 +99,13 @@ Parameters:
 
 Examples:
 
+```js
 > all([true, true, true])
-> true
+true
 
 > some([false, true, true])
-> false
+false
+```
 
 ### :gear: some
 
@@ -114,17 +121,13 @@ Parameters:
 
 Examples:
 
+```js
 > some([true, false, false])
-> true
+true
 
 > some([false, false, false])
-> false
-
-### :gear: ls
-
-| Function | Type                                            |
-| -------- | ----------------------------------------------- |
-| `ls`     | `(array: Number[], value: Number) => Boolean[]` |
+false
+```
 
 ### :gear: condition
 
@@ -151,6 +154,8 @@ Parameters:
 
 Examples:
 
+```js
 > const out = condition([0, 1, 2, 3], "1 <= x, x < 3")
 > console.log(out)
-> [false, true, true, false]
+[false, true, true, false]
+```

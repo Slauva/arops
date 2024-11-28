@@ -1,6 +1,6 @@
 /node_modules
 /src
-/test
+/tests
 /coverage
 
 /.husky
@@ -19,3 +19,4 @@ package-lock.json
 tsconfig.json
 tsup.config.ts
 .gitignore
+jest.config.ts
