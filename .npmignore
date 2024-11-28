@@ -1,0 +1,10 @@
+# Ignore all files
+*
+
+# Allow specific files in the root
+!/package.json
+!/LICENSE
+!/README.md
+
+# Allow specific directories
+!/dist

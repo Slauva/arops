@@ -1,14 +1,25 @@
 {
   "name": "@umath/arops",
   "version": "0.0.1",
-  "description": "",
-  "main": "/dist/index.js",
+  "description": "A simple and lightweight library of utilities for working with arrays",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "type": "module",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Slauva",
+  "license": "MIT",
+  "keywords": [
+    "array",
+    "utils",
+    "math",
+    "boolean logic",
+    "boolean"
+  ],
   "devDependencies": {
-    "tsup": "^8.3.5"
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
   }
 }
