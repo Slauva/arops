@@ -1,7 +1,9 @@
 /node_modules
 /src
 /test
+/coverage
 
+/.husky
 /.vscode
 /.idea
 
@@ -11,6 +13,7 @@
 .editorconfig
 .prettierrc
 .prettierignore
+.commitlintrc.json
 
 package-lock.json
 tsconfig.json
