@@ -1,9 +1,9 @@
 "use strict";
 
-export const less = <T extends Number>(
+export const less = <T extends number>(
   array: Array<T>,
   value: T,
-  eq: Boolean = false
+  eq: Boolean = false,
 ): Array<Boolean> => {
   return array.map<Boolean>((t_value) => {
     if (eq) {
@@ -17,7 +17,7 @@ export const less = <T extends Number>(
 export const greater = <T extends Number>(
   array: Array<T>,
   value: T,
-  eq: Boolean = false
+  eq: Boolean = false,
 ): Array<Boolean> => {
   return array.map<Boolean>((t_value) => {
     if (eq) {
@@ -30,7 +30,7 @@ export const greater = <T extends Number>(
 
 export const equal = <T extends Number>(
   array: Array<T>,
-  value: T
+  value: T,
 ): Array<Boolean> => {
   return array.map<Boolean>((t_value) => t_value === value);
 };

@@ -1,10 +1,18 @@
-# Ignore all files
-*
+/node_modules
+/src
+/test
 
-# Allow specific files in the root
-!/package.json
-!/LICENSE
-!/README.md
+/.vscode
+/.idea
 
-# Allow specific directories
-!/dist
+.env
+.DS_Store
+
+.editorconfig
+.prettierrc
+.prettierignore
+
+package-lock.json
+tsconfig.json
+tsup.config.ts
+.gitignore
