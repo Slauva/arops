@@ -1,0 +1,14 @@
+{
+  "name": "@umath/arops",
+  "version": "0.0.1",
+  "description": "",
+  "main": "/dist/index.js",
+  "scripts": {
+    "build": "tsup"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsup": "^8.3.5"
+  }
+}
