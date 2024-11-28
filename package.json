@@ -18,6 +18,10 @@
     "boolean logic",
     "boolean"
   ],
+  "repository": {
+    "url": "https://github.com/Slauva/arops"
+  },
+  "homepage": "https://github.com/Slauva/arops/README.md",
   "devDependencies": {
     "tsup": "^8.3.5",
     "typescript": "^5.7.2"
