@@ -1,6 +1,6 @@
 {
   "$schema": "https://typedoc.org/schema.json",
   "entryPoints": ["./src/index.ts"],
-  "out": "site",
-  "favicon": "./docs/logo.svg"
+  "out": "docs",
+  "favicon": "./logo.svg"
 }
