@@ -2,14 +2,28 @@
 import { ufanc } from "../utils";
 
 /**
+ * @categoryDescription Trigonometric functions
+ * @categoryDescription Hyperbolic functions
+ * @categoryDescription Rounding
+ * @categoryDescription Exponents and logarithms
+ * @categoryDescription Arithmetic operations
+ * @categoryDescription Math Constance
+ *
+ * @showCategories
+ * @module
+ */
+
+/**
  * Constant representing the mathematical constant Pi (π).
  * @type {number}
+ * @category Math Constance
  */
 export const pi = Math.PI;
 
 /**
  * Constant representing the Euler's number (e).
  * @type {number}
+ * @category Math Constance
  */
 export const e = Math.E;
 
@@ -22,6 +36,7 @@ export const e = Math.E;
  * > abs([-1, -2, -3, 4])
  * [1, 2, 3, 4]
  * ```
+ * @category Arithmetic operations
  */
 export const abs = (array: number[]): number[] => ufanc(array, Math.abs);
 
@@ -34,6 +49,7 @@ export const abs = (array: number[]): number[] => ufanc(array, Math.abs);
  * > sqrt([1, 4, 9, 16])
  * [1, 2, 3, 4]
  * ```
+ * @category Arithmetic operations
  */
 export const sqrt = (array: number[]): number[] => ufanc(array, Math.sqrt);
 
@@ -46,6 +62,7 @@ export const sqrt = (array: number[]): number[] => ufanc(array, Math.sqrt);
  * > log([1, Math.E, Math.E * Math.E])
  * [0, 1, 2]
  * ```
+ * @category Exponents and logarithms
  */
 export const log = (array: number[]): number[] => ufanc(array, Math.log);
 
@@ -58,6 +75,7 @@ export const log = (array: number[]): number[] => ufanc(array, Math.log);
  * > log2([1, 2, 4, 8])
  * [0, 1, 2, 3]
  * ```
+ * @category Exponents and logarithms
  */
 export const log2 = (array: number[]): number[] => ufanc(array, Math.log2);
 
@@ -70,6 +88,7 @@ export const log2 = (array: number[]): number[] => ufanc(array, Math.log2);
  * > log10([1, 10, 100, 1000])
  * [0, 1, 2, 3]
  * ```
+ * @category Exponents and logarithms
  */
 export const log10 = (array: number[]): number[] => ufanc(array, Math.log10);
 
@@ -83,6 +102,7 @@ export const log10 = (array: number[]): number[] => ufanc(array, Math.log10);
  * > power([1, 2, 3], 2)
  * [1, 4, 9]
  * ```
+ * @category Arithmetic operations
  */
 export const power = (array: number[], p: number): number[] =>
   array.map((v) => Math.pow(v, p));
@@ -96,6 +116,7 @@ export const power = (array: number[], p: number): number[] =>
  * > cos([0, Math.PI / 2, Math.PI])
  * [1, 0, -1]
  * ```
+ * @category Trigonometric functions
  */
 export const cos = (array: number[]): number[] => ufanc(array, Math.cos);
 
@@ -108,6 +129,7 @@ export const cos = (array: number[]): number[] => ufanc(array, Math.cos);
  * > sin([0, Math.PI / 2, Math.PI])
  * [0, 1, 0]
  * ```
+ * @category Trigonometric functions
  */
 export const sin = (array: number[]): number[] => ufanc(array, Math.sin);
 
@@ -120,6 +142,7 @@ export const sin = (array: number[]): number[] => ufanc(array, Math.sin);
  * > tan([0, Math.PI / 4])
  * [0, 1]
  * ```
+ * @category Trigonometric functions
  */
 export const tan = (array: number[]): number[] => ufanc(array, Math.tan);
 
@@ -132,6 +155,7 @@ export const tan = (array: number[]): number[] => ufanc(array, Math.tan);
  * > arccos([1, 0, -1])
  * [0, Math.PI / 2, Math.PI]
  * ```
+ * @category Trigonometric functions
  */
 export const arccos = (array: number[]): number[] => ufanc(array, Math.acos);
 
@@ -144,6 +168,7 @@ export const arccos = (array: number[]): number[] => ufanc(array, Math.acos);
  * > arcsin([0, 1, -1])
  * [0, Math.PI / 2, -Math.PI / 2]
  * ```
+ * @category Trigonometric functions
  */
 export const arcsin = (array: number[]): number[] => ufanc(array, Math.asin);
 
@@ -156,6 +181,7 @@ export const arcsin = (array: number[]): number[] => ufanc(array, Math.asin);
  * > arctan([0, 1, -1])
  * [0, Math.PI / 4, -Math.PI / 4]
  * ```
+ * @category Trigonometric functions
  */
 export const arctan = (array: number[]): number[] => ufanc(array, Math.atan);
 
@@ -168,6 +194,7 @@ export const arctan = (array: number[]): number[] => ufanc(array, Math.atan);
  * > cosh([0, 1, -1])
  * [1, 1.543080634815244, 1.543080634815244]
  * ```
+ * @category Hyperbolic functions
  */
 export const cosh = (array: number[]): number[] => ufanc(array, Math.cosh);
 
@@ -180,6 +207,7 @@ export const cosh = (array: number[]): number[] => ufanc(array, Math.cosh);
  * > sinh([0, 1, -1])
  * [0, 1.1752011936438014, -1.1752011936438014]
  * ```
+ * @category Hyperbolic functions
  */
 export const sinh = (array: number[]): number[] => ufanc(array, Math.sinh);
 
@@ -192,6 +220,7 @@ export const sinh = (array: number[]): number[] => ufanc(array, Math.sinh);
  * > tanh([0, 1, -1])
  * [0, 0.7615941559557649, -0.7615941559557649]
  * ```
+ * @category Hyperbolic functions
  */
 export const tanh = (array: number[]): number[] => ufanc(array, Math.tanh);
 
@@ -204,6 +233,7 @@ export const tanh = (array: number[]): number[] => ufanc(array, Math.tanh);
  * > arccosh([1, 2, 3])
  * [0, 1.3169578969248166, 1.762747174039086]
  * ```
+ * @category Hyperbolic functions
  */
 export const arccosh = (array: number[]): number[] => ufanc(array, Math.acosh);
 
@@ -216,6 +246,7 @@ export const arccosh = (array: number[]): number[] => ufanc(array, Math.acosh);
  * > arcsinh([0, 1, -1])
  * [0, 0.881373587019543, -0.881373587019543]
  * ```
+ * @category Hyperbolic functions
  */
 export const arcsinh = (array: number[]): number[] => ufanc(array, Math.asinh);
 
@@ -228,6 +259,7 @@ export const arcsinh = (array: number[]): number[] => ufanc(array, Math.asinh);
  * > arctanh([0, 0.78071444, 0.48047278])
  * [0, 1.04719756, 0.52359878]
  * ```
+ * @category Hyperbolic functions
  */
 export const arctanh = (array: number[]): number[] => ufanc(array, Math.atanh);
 
@@ -240,6 +272,7 @@ export const arctanh = (array: number[]): number[] => ufanc(array, Math.atanh);
  * > exp([0, 1, 2])
  * [1, 2.718281828459045, 7.38905609893065]
  * ```
+ * @category Exponents and logarithms
  */
 export const exp = (array: number[]): number[] => ufanc(array, Math.exp);
 
@@ -252,6 +285,7 @@ export const exp = (array: number[]): number[] => ufanc(array, Math.exp);
  * > ceil([1.2, 2.5, 3.7])
  * [2, 3, 4]
  * ```
+ * @category Rounding
  */
 export const ceil = (array: number[]): number[] => ufanc(array, Math.ceil);
 
@@ -264,6 +298,7 @@ export const ceil = (array: number[]): number[] => ufanc(array, Math.ceil);
  * > floor([1.2, 2.5, 3.7])
  * [1, 2, 3]
  * ```
+ * @category Rounding
  */
 export const floor = (array: number[]): number[] => ufanc(array, Math.floor);
 
@@ -276,6 +311,7 @@ export const floor = (array: number[]): number[] => ufanc(array, Math.floor);
  * > fround([1.2, 2.5, 3.7])
  * [1.2000000476837158, 2.5, 3.700000047683716]
  * ```
+ * @category Rounding
  */
 export const fround = (array: number[]): number[] => ufanc(array, Math.fround);
 
@@ -288,6 +324,7 @@ export const fround = (array: number[]): number[] => ufanc(array, Math.fround);
  * > round([1.2, 2.5, 3.7])
  * [1, 3, 4]
  * ```
+ * @category Rounding
  */
 export const round = (array: number[]): number[] => ufanc(array, Math.round);
 
@@ -300,5 +337,6 @@ export const round = (array: number[]): number[] => ufanc(array, Math.round);
  * > trunc([1.2, 2.5, 3.7])
  * [1, 2, 3]
  * ```
+ * @category Rounding
  */
 export const trunc = (array: number[]): number[] => ufanc(array, Math.trunc);

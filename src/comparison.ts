@@ -2,6 +2,13 @@
 import { TokenError } from "./error";
 
 /**
+ * @categoryDescription Comparision operations
+ *
+ * @showCategories
+ * @module
+ */
+
+/**
  * Returns an array indicating whether each element of the input array is less than or
  * equal to a given value (if `eq` is true) or strictly less than the value (if `eq` is false).
  *
@@ -20,6 +27,7 @@ import { TokenError } from "./error";
  * less than or equal to (`true`), or strictly less than (`false`).
  * @returns {Array<boolean>} An array of booleans where each boolean indicates if
  * the corresponding element in `array` is less than (or less than or equal to) `value`.
+ * @category Comparision operations
  */
 export const less = (
   array: Array<number>,
@@ -54,6 +62,7 @@ export const less = (
  * greater than or equal to (`true`), or strictly greater than (`false`).
  * @returns {Array<boolean>} An array of booleans where each boolean indicates if
  * the corresponding element in `array` is greater than (or greater than or equal to) `value`.
+ * @category Comparision operations
  */
 export const greater = (
   array: Array<number>,
@@ -82,6 +91,7 @@ export const greater = (
  * @param {number} value - The value each element of the array is compared against.
  * @returns {Array<boolean>} An array of booleans where each boolean indicates if
  * the corresponding element in `array` is equal to `value`.
+ * @category Comparision operations
  */
 export const equal = (array: Array<number>, value: number): Array<boolean> => {
   return array.map<boolean>((t_value) => t_value === value);
@@ -101,6 +111,7 @@ export const equal = (array: Array<number>, value: number): Array<boolean> => {
  *
  * @param {Array<boolean>} array - The array of booleans to be evaluated.
  * @returns {boolean} Returns `true` if all elements in `array` are `true`, otherwise `false`.
+ * @category Comparision operations
  */
 export const all = (array: Array<boolean>): boolean => {
   return array.reduce<boolean>((prev, curr) => prev && curr, true);
@@ -120,6 +131,7 @@ export const all = (array: Array<boolean>): boolean => {
  *
  * @param {Array<boolean>} array - The array of booleans to be evaluated.
  * @returns {boolean} Returns `true` if at least one element in `array` is `true`, otherwise `false`.
+ * @category Comparision operations
  */
 export const some = (array: Array<boolean>): boolean => {
   return array.reduce<boolean>((prev, curr) => prev || curr, false);
@@ -267,6 +279,7 @@ const expr = {
  * all the conditions. True means all conditions are met for that element, otherwise false.
  *
  * @throws {TokenError} Throws an error if any condition string does not match the required format.
+ * @category Comparision operations
  */
 export const condition = (
   array: Array<number>,
