@@ -1,5 +1,5 @@
 "use strict";
-import { ufanc } from "@/utils";
+import { ufanc } from "../utils";
 
 /**
  * Constant representing the mathematical constant Pi (π).
@@ -218,6 +218,18 @@ export const arccosh = (array: number[]): number[] => ufanc(array, Math.acosh);
  * ```
  */
 export const arcsinh = (array: number[]): number[] => ufanc(array, Math.asinh);
+
+/**
+ * Calculate the hyperbolic arctan of each element in an array.
+ * @param {number[]} array - The array of numbers.
+ * @returns {number[]} An array with the hyperbolic arcsine of each input element.
+ * @example
+ * ```js
+ * > arctanh([0, 0.78071444, 0.48047278])
+ * [0, 1.04719756, 0.52359878]
+ * ```
+ */
+export const arctanh = (array: number[]): number[] => ufanc(array, Math.atanh);
 
 /**
  * Calculate the exponential function of each element in an array.

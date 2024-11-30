@@ -17,6 +17,7 @@
 - [tanh](#gear-tanh)
 - [arccosh](#gear-arccosh)
 - [arcsinh](#gear-arcsinh)
+- [arctanh](#gear-arctanh)
 - [exp](#gear-exp)
 - [ceil](#gear-ceil)
 - [floor](#gear-floor)
@@ -346,6 +347,25 @@ Examples:
 ```js
 > arcsinh([0, 1, -1])
 [0, 0.881373587019543, -0.881373587019543]
+```
+
+### :gear: arctanh
+
+Calculate the hyperbolic arctan of each element in an array.
+
+| Function  | Type                            |
+| --------- | ------------------------------- |
+| `arctanh` | `(array: number[]) => number[]` |
+
+Parameters:
+
+- `array`: - The array of numbers.
+
+Examples:
+
+```js
+> arctanh([0, 0.78071444, 0.48047278])
+[0, 1.04719756, 0.52359878]
 ```
 
 ### :gear: exp
