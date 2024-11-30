@@ -14,19 +14,19 @@ import { TokenError } from "./error";
  * [true, true, true, false]
  * ```
  *
- * @param {Array<Number>} array - The array of numbers to be compared.
- * @param {Number} value - The value each element of the array is compared against.
- * @param {Boolean} [eq=false] - A boolean indicating if the comparison should be
+ * @param {Array<number>} array - The array of numbers to be compared.
+ * @param {number} value - The value each element of the array is compared against.
+ * @param {boolean} [eq=false] - A boolean indicating if the comparison should be
  * less than or equal to (`true`), or strictly less than (`false`).
- * @returns {Array<Boolean>} An array of booleans where each boolean indicates if
+ * @returns {Array<boolean>} An array of booleans where each boolean indicates if
  * the corresponding element in `array` is less than (or less than or equal to) `value`.
  */
 export const less = (
-  array: Array<Number>,
-  value: Number,
-  eq: Boolean = false,
-): Array<Boolean> => {
-  return array.map<Boolean>((t_value) => {
+  array: Array<number>,
+  value: number,
+  eq: boolean = false,
+): Array<boolean> => {
+  return array.map<boolean>((t_value) => {
     if (eq) {
       return t_value <= value;
     } else {
@@ -48,19 +48,19 @@ export const less = (
  * [false, false, true, true]
  * ```
  *
- * @param {Array<Number>} array - The array of numbers to be compared.
- * @param {Number} value - The value each element of the array is compared against.
- * @param {Boolean} [eq=false] - A boolean indicating if the comparison should be
+ * @param {Array<number>} array - The array of numbers to be compared.
+ * @param {number} value - The value each element of the array is compared against.
+ * @param {boolean} [eq=false] - A boolean indicating if the comparison should be
  * greater than or equal to (`true`), or strictly greater than (`false`).
- * @returns {Array<Boolean>} An array of booleans where each boolean indicates if
+ * @returns {Array<boolean>} An array of booleans where each boolean indicates if
  * the corresponding element in `array` is greater than (or greater than or equal to) `value`.
  */
 export const greater = (
-  array: Array<Number>,
-  value: Number,
-  eq: Boolean = false,
-): Array<Boolean> => {
-  return array.map<Boolean>((t_value) => {
+  array: Array<number>,
+  value: number,
+  eq: boolean = false,
+): Array<boolean> => {
+  return array.map<boolean>((t_value) => {
     if (eq) {
       return t_value >= value;
     } else {
@@ -78,13 +78,13 @@ export const greater = (
  * [true, false, true, false]
  *```
  *
- * @param {Array<Number>} array - The array of numbers to be compared.
- * @param {Number} value - The value each element of the array is compared against.
- * @returns {Array<Boolean>} An array of booleans where each boolean indicates if
+ * @param {Array<number>} array - The array of numbers to be compared.
+ * @param {number} value - The value each element of the array is compared against.
+ * @returns {Array<boolean>} An array of booleans where each boolean indicates if
  * the corresponding element in `array` is equal to `value`.
  */
-export const equal = (array: Array<Number>, value: Number): Array<Boolean> => {
-  return array.map<Boolean>((t_value) => t_value === value);
+export const equal = (array: Array<number>, value: number): Array<boolean> => {
+  return array.map<boolean>((t_value) => t_value === value);
 };
 
 /**
@@ -99,11 +99,11 @@ export const equal = (array: Array<Number>, value: Number): Array<Boolean> => {
  * false
  * ```
  *
- * @param {Array<Boolean>} array - The array of booleans to be evaluated.
- * @returns {Boolean} Returns `true` if all elements in `array` are `true`, otherwise `false`.
+ * @param {Array<boolean>} array - The array of booleans to be evaluated.
+ * @returns {boolean} Returns `true` if all elements in `array` are `true`, otherwise `false`.
  */
-export const all = (array: Array<Boolean>): Boolean => {
-  return array.reduce<Boolean>((prev, curr) => prev && curr, true);
+export const all = (array: Array<boolean>): boolean => {
+  return array.reduce<boolean>((prev, curr) => prev && curr, true);
 };
 
 /**
@@ -118,11 +118,11 @@ export const all = (array: Array<Boolean>): Boolean => {
  * false
  * ```
  *
- * @param {Array<Boolean>} array - The array of booleans to be evaluated.
- * @returns {Boolean} Returns `true` if at least one element in `array` is `true`, otherwise `false`.
+ * @param {Array<boolean>} array - The array of booleans to be evaluated.
+ * @returns {boolean} Returns `true` if at least one element in `array` is `true`, otherwise `false`.
  */
-export const some = (array: Array<Boolean>): Boolean => {
-  return array.reduce<Boolean>((prev, curr) => prev || curr, false);
+export const some = (array: Array<boolean>): boolean => {
+  return array.reduce<boolean>((prev, curr) => prev || curr, false);
 };
 
 /**
@@ -191,7 +191,7 @@ type TokenValues = (typeof l_token)[Token];
  * in the condition and the corresponding token expression.
  * @throws {TokenError} Thrown when the condition string does not match the required format.
  */
-const parseCondition = (
+export const parseCondition = (
   condition: string,
 ): { value: number; expression: TokenValues } => {
   const values = condition.split(" ");
@@ -231,13 +231,13 @@ const parseCondition = (
  * @param ge - Function greater or equal
  * @param eq - Function equal
  *
- * @type {Record<"gr" | "ge" | "ls" | "le" | "eq", (array: Number[], value: Number) => Boolean[]>}
+ * @type {Record<"gr" | "ge" | "ls" | "le" | "eq", (array: number[], value: number) => boolean[]>}
  */
 const expr = {
-  ls: (array: Array<Number>, value: Number) => less(array, value, false),
-  le: (array: Array<Number>, value: Number) => less(array, value, true),
-  gr: (array: Array<Number>, value: Number) => greater(array, value, false),
-  ge: (array: Array<Number>, value: Number) => greater(array, value, true),
+  ls: (array: Array<number>, value: number) => less(array, value, false),
+  le: (array: Array<number>, value: number) => less(array, value, true),
+  gr: (array: Array<number>, value: number) => greater(array, value, false),
+  ge: (array: Array<number>, value: number) => greater(array, value, true),
   eq: equal,
 };
 
@@ -261,28 +261,28 @@ const expr = {
  * [false, true, true, false]
  * ```
  *
- * @param {Array<Number>} array - The array of numbers to evaluate against the conditions.
+ * @param {Array<number>} array - The array of numbers to evaluate against the conditions.
  * @param {string} conditions - A comma-separated string containing conditions to evaluate.
- * @returns {Array<Boolean>} An array of boolean values indicating if each element in the array satisfies
+ * @returns {Array<boolean>} An array of boolean values indicating if each element in the array satisfies
  * all the conditions. True means all conditions are met for that element, otherwise false.
  *
  * @throws {TokenError} Throws an error if any condition string does not match the required format.
  */
 export const condition = (
-  array: Array<Number>,
+  array: Array<number>,
   conditions: string,
-): Array<Boolean> => {
+): Array<boolean> => {
   const expressions = conditions.split(",");
   const parsed = expressions.map((value) => parseCondition(value.trim()));
-  const out: Array<Array<Boolean>> = [];
+  const out: Array<Array<boolean>> = [];
   parsed.forEach(({ value, expression }) => {
     const func = expr[expression];
     out.push(func(array, value));
   });
-  return out.reduce<Array<Boolean>>(
+  return out.reduce<Array<boolean>>(
     (prev, curr) => {
       return prev.map((v, i) => v && curr[i]);
     },
-    Array.from({ length: array.length }).fill(true) as Array<Boolean>,
+    Array.from({ length: array.length }).fill(true) as Array<boolean>,
   );
 };

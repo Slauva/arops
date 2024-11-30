@@ -10,7 +10,11 @@
     "declaration": true,
     "isolatedModules": true,
     "noEmit": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": ["src"],
   "exclude": ["node_modules"]

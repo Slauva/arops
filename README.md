@@ -1,161 +1,79 @@
-# @slauva/arops
+[![NPM Version][npm-image]][npm-url]
+[![Downloads Stats][npm-downloads]][npm-url]
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-A simple and lightweight library of utilities for working with arrays
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/Slauva/arops">
+    <img src="docs/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-## :toolbox: Functions
+  <h3 align="center">Arops</h3>
 
-- [@slauva/arops](#slauvaarops)
-  - [:toolbox: Functions](#toolbox-functions)
-    - [:gear: less](#gear-less)
-    - [:gear: greater](#gear-greater)
-    - [:gear: equal](#gear-equal)
-    - [:gear: all](#gear-all)
-    - [:gear: some](#gear-some)
-    - [:gear: condition](#gear-condition)
+  <p align="center">
+    A simple and lightweight library of utilities for working with arrays
+    <br />
+    <a href="https://github.com/Slauva/arops"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/Slauva/arops/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Slauva/arops/issues">Request Feature</a>
+  </p>
+</div>
 
-### :gear: less
+<!-- INSTALLATION -->
 
-Returns an array indicating whether each element of the input array is less than or
-equal to a given value (if `eq` is true) or strictly less than the value (if `eq` is false).
+### Installation
 
-| Function | Type                                                          |
-| -------- | ------------------------------------------------------------- |
-| `less`   | `(array: Number[], value: Number, eq?: Boolean) => Boolean[]` |
+npm
 
-Parameters:
-
-- `array`: - The array of numbers to be compared.
-- `value`: - The value each element of the array is compared against.
-- `eq`: - A boolean indicating if the comparison should be
-  less than or equal to (`true`), or strictly less than (`false`).
-
-Examples:
-
-```js
-> less([1, 2, 3, 4], 3)
-[true, true, false, false]
-
-> less([1, 2, 3, 4], 3, true)
-[true, true, true, false]
+```bash
+npm i @slauva/arops
 ```
 
-### :gear: greater
+yarn
 
-Returns an array indicating whether each element of the input array is greater than or
-equal to a given value (if `eq` is true) or strictly greater than the value (if `eq` is false).
-
-| Function  | Type                                                          |
-| --------- | ------------------------------------------------------------- |
-| `greater` | `(array: Number[], value: Number, eq?: Boolean) => Boolean[]` |
-
-Parameters:
-
-- `array`: - The array of numbers to be compared.
-- `value`: - The value each element of the array is compared against.
-- `eq`: - A boolean indicating if the comparison should be
-  greater than or equal to (`true`), or strictly greater than (`false`).
-
-Examples:
-
-```js
-> greater([1, 2, 3, 4], 3)
-[false, false, false, true]
-
-> greater([1, 2, 3, 4], 3, true)
-[false, false, true, true]
+```bash
+yarn add @slauva/arops
 ```
 
-### :gear: equal
+<!-- Documentations -->
 
-Returns an array indicating whether each element of the input array is equal to a given value.
+### API References
 
-| Function | Type                                            |
-| -------- | ----------------------------------------------- |
-| `equal`  | `(array: Number[], value: Number) => Boolean[]` |
+#### Logic operations
 
-Parameters:
+[Goto referencies](docs/logic.md)
 
-- `array`: - The array of numbers to be compared.
-- `value`: - The value each element of the array is compared against.
+- [less](#gear-less)
+- [greater](#gear-greater)
+- [equal](#gear-equal)
+- [all](#gear-all)
+- [some](#gear-some)
+- [condition](#gear-condition)
 
-Examples:
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-```js
-> equal([1, 2, 1, 3], 1)
-[true, false, true, false]
-```
-
-### :gear: all
-
-Checks if all elements in the input array are `true`.
-
-| Function | Type                            |
-| -------- | ------------------------------- |
-| `all`    | `(array: Boolean[]) => Boolean` |
-
-Parameters:
-
-- `array`: - The array of booleans to be evaluated.
-
-Examples:
-
-```js
-> all([true, true, true])
-true
-
-> some([false, true, true])
-false
-```
-
-### :gear: some
-
-Checks if at least one element in the input array is `true`.
-
-| Function | Type                            |
-| -------- | ------------------------------- |
-| `some`   | `(array: Boolean[]) => Boolean` |
-
-Parameters:
-
-- `array`: - The array of booleans to be evaluated.
-
-Examples:
-
-```js
-> some([true, false, false])
-true
-
-> some([false, false, false])
-false
-```
-
-### :gear: condition
-
-Evaluates a set of conditions over an array of numbers, returning an array of booleans indicating
-whether each element in the input array satisfies all specified conditions.
-
-The condition string should have the format `{value/x} {expression} {x/value}`, where
-`value` should to be number value, and expression like token: ">" | ">=" | "<" | "<=" | "=".
-
-The `conditions` are parsed using the `parseCondition` function and each parsed condition is evaluated
-using the corresponding function in `expr`.
-
-It supports conditions where 'x' denotes the variable and the `expression` determines
-the comparison to either side.
-
-| Function    | Type                                                 |
-| ----------- | ---------------------------------------------------- |
-| `condition` | `(array: Number[], conditions: string) => Boolean[]` |
-
-Parameters:
-
-- `array`: - The array of numbers to evaluate against the conditions.
-- `conditions`: - A comma-separated string containing conditions to evaluate.
-
-Examples:
-
-```js
-> const out = condition([0, 1, 2, 3], "1 <= x, x < 3")
-> console.log(out)
-[false, true, true, false]
-```
+[npm-image]: https://img.shields.io/npm/v/@slauva/arops.svg?style=for-the-badge
+[npm-downloads]: https://img.shields.io/npm/dm/@slauva/arops.svg?style=for-the-badge
+[npm-url]: https://www.npmjs.com/package/@slauva/arops
+[contributors-shield]: https://img.shields.io/github/contributors/Slauva/arops.svg?style=for-the-badge
+[contributors-url]: https://github.com/Slauva/arops/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Slauva/arops.svg?style=for-the-badge
+[forks-url]: https://github.com/Slauva/arops/forks
+[stars-shield]: https://img.shields.io/github/stars/Slauva/arops.svg?style=for-the-badge
+[stars-url]: https://github.com/Slauva/arops/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Slauva/arops.svg?style=for-the-badge
+[issues-url]: https://github.com/Slauva/arops/issues
+[license-shield]: https://img.shields.io/github/license/Slauva/arops.svg?style=for-the-badge
+[license-url]: https://github.com/Slauva/arops/blob/main/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: http://www.linkedin.com/in/viacheslav-koshman-182056247
