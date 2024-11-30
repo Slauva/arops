@@ -8,6 +8,7 @@ import { ufanc } from "../utils";
  * @categoryDescription Exponents and logarithms
  * @categoryDescription Arithmetic operations
  * @categoryDescription Math Constance
+ * @categoryDescription Error
  *
  * @showCategories
  * @module
