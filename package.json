@@ -44,7 +44,8 @@
   },
   "lint-staged": {
     "{src,tests}/**/*.{js,ts}": [
-      "prettier --write -u"
+      "prettier --write -u",
+      "jest"
     ],
     "*.+(json|css|md|ya?ml)": "prettier --write -u"
   },
