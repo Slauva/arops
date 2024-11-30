@@ -2,6 +2,7 @@
 /src
 /tests
 /coverage
+/scripts
 
 /.husky
 /.vscode

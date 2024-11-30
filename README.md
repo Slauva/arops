@@ -59,6 +59,34 @@ yarn add @slauva/arops
 - [:gear: some](#gear-some)
 - [:gear: condition](#gear-condition)
 
+#### Math operations
+
+[Goto referencies](docs/maths.md)
+
+- [:gear: abs](#gear-abs)
+- [:gear: sqrt](#gear-sqrt)
+- [:gear: log](#gear-log)
+- [:gear: log2](#gear-log2)
+- [:gear: log10](#gear-log10)
+- [:gear: power](#gear-power)
+- [:gear: cos](#gear-cos)
+- [:gear: sin](#gear-sin)
+- [:gear: tan](#gear-tan)
+- [:gear: arccos](#gear-arccos)
+- [:gear: arcsin](#gear-arcsin)
+- [:gear: arctan](#gear-arctan)
+- [:gear: cosh](#gear-cosh)
+- [:gear: sinh](#gear-sinh)
+- [:gear: tanh](#gear-tanh)
+- [:gear: arccosh](#gear-arccosh)
+- [:gear: arcsinh](#gear-arcsinh)
+- [:gear: exp](#gear-exp)
+- [:gear: ceil](#gear-ceil)
+- [:gear: floor](#gear-floor)
+- [:gear: fround](#gear-fround)
+- [:gear: round](#gear-round)
+- [:gear: trunc](#gear-trunc)
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 

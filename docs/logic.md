@@ -1,12 +1,12 @@
 ## :toolbox: Functions
 
-- [:toolbox: Functions](#toolbox-functions)
-  - [:gear: less](#gear-less)
-  - [:gear: greater](#gear-greater)
-  - [:gear: equal](#gear-equal)
-  - [:gear: all](#gear-all)
-  - [:gear: some](#gear-some)
-  - [:gear: condition](#gear-condition)
+- [less](#gear-less)
+- [greater](#gear-greater)
+- [equal](#gear-equal)
+- [all](#gear-all)
+- [some](#gear-some)
+- [parseCondition](#gear-parsecondition)
+- [condition](#gear-condition)
 
 ### :gear: less
 
@@ -15,7 +15,7 @@ equal to a given value (if `eq` is true) or strictly less than the value (if `eq
 
 | Function | Type                                                          |
 | -------- | ------------------------------------------------------------- |
-| `less`   | `(array: Number[], value: Number, eq?: Boolean) => Boolean[]` |
+| `less`   | `(array: number[], value: number, eq?: boolean) => boolean[]` |
 
 Parameters:
 
@@ -41,7 +41,7 @@ equal to a given value (if `eq` is true) or strictly greater than the value (if 
 
 | Function  | Type                                                          |
 | --------- | ------------------------------------------------------------- |
-| `greater` | `(array: Number[], value: Number, eq?: Boolean) => Boolean[]` |
+| `greater` | `(array: number[], value: number, eq?: boolean) => boolean[]` |
 
 Parameters:
 
@@ -66,7 +66,7 @@ Returns an array indicating whether each element of the input array is equal to 
 
 | Function | Type                                            |
 | -------- | ----------------------------------------------- |
-| `equal`  | `(array: Number[], value: Number) => Boolean[]` |
+| `equal`  | `(array: number[], value: number) => boolean[]` |
 
 Parameters:
 
@@ -86,7 +86,7 @@ Checks if all elements in the input array are `true`.
 
 | Function | Type                            |
 | -------- | ------------------------------- |
-| `all`    | `(array: Boolean[]) => Boolean` |
+| `all`    | `(array: boolean[]) => boolean` |
 
 Parameters:
 
@@ -108,7 +108,7 @@ Checks if at least one element in the input array is `true`.
 
 | Function | Type                            |
 | -------- | ------------------------------- |
-| `some`   | `(array: Boolean[]) => Boolean` |
+| `some`   | `(array: boolean[]) => boolean` |
 
 Parameters:
 
@@ -122,6 +122,35 @@ true
 
 > some([false, false, false])
 false
+```
+
+### :gear: parseCondition
+
+Parses a condition string and returns an object containing a numeric value and its corresponding
+token expression derived from predefined token mappings.
+
+The condition string should have the format `{value/x} {expression} {x/value}`, where
+`value` should to be number value, and expression like token: ">" | ">=" | "<" | "<=" | "=".
+It supports conditions where 'x' denotes the variable and the `expression` determines
+the comparison to either side.
+
+If `x` is at the left of the expression, the `l_token` mapping is used; if on the right,
+the `r_token` mapping applies.
+
+| Function         | Type                                                                 |
+| ---------------- | -------------------------------------------------------------------- |
+| `parseCondition` | `(condition: string) => { value: number; expression: TokenValues; }` |
+
+Parameters:
+
+- `condition`: - A string representing the condition to parse.
+
+Examples:
+
+```js
+> const out = parseCondition("1 < x")
+> console.log(out)
+{value: 1, expression: "gr"}
 ```
 
 ### :gear: condition
@@ -140,7 +169,7 @@ the comparison to either side.
 
 | Function    | Type                                                 |
 | ----------- | ---------------------------------------------------- |
-| `condition` | `(array: Number[], conditions: string) => Boolean[]` |
+| `condition` | `(array: number[], conditions: string) => boolean[]` |
 
 Parameters:
 

@@ -1,6 +1,6 @@
 {
   "name": "@slauva/arops",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A simple and lightweight library of utilities for working with arrays",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -8,7 +8,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup",
-    "tsdoc": "tsdoc --src=src/logic.ts",
+    "tsdoc": "node scripts/generate_docs.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:ci": "jest --ci",
@@ -27,7 +27,6 @@
   "repository": {
     "url": "git+https://github.com/Slauva/arops.git"
   },
-  "homepage": "https://github.com/Slauva/arops/README.md",
   "devDependencies": {
     "@commitlint/config-conventional": "^19.6.0",
     "@types/jest": "^29.5.14",
