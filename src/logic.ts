@@ -95,7 +95,7 @@ export const equal = (array: Array<number>, value: number): Array<boolean> => {
  * > all([true, true, true])
  * true
  *
- * > some([false, true, true])
+ * > all([false, true, true])
  * false
  * ```
  *

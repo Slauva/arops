@@ -3,6 +3,8 @@
 /tests
 /coverage
 /scripts
+/docs
+/site
 
 /.husky
 /.vscode
@@ -21,3 +23,4 @@ tsconfig.json
 tsup.config.ts
 .gitignore
 jest.config.ts
+typedoc.json
