@@ -1,12 +1,3 @@
-[![NPM Version][npm-image]][npm-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -19,7 +10,7 @@
   <p align="center">
     A simple and lightweight library of utilities for working with arrays
     <br />
-    <a href="https://github.com/Slauva/arops"><strong>Explore the docs »</strong></a>
+    <a href="https://slauva.github.io/arops/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/Slauva/arops/issues">Report Bug</a>
@@ -27,6 +18,25 @@
     <a href="https://github.com/Slauva/arops/issues">Request Feature</a>
   </p>
 </div>
+
+[![NPM Version][npm-image]][npm-url]
+[![Downloads Stats][npm-downloads]][npm-url]
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+<!-- DESCRIPTION -->
+
+The **Arops** npm package is a simple and lightweight library designed to provide utility functions for efficient array manipulation. It includes a range of functionalities to perform common operations on arrays, helping developers manage and transform array data with ease. The library is designed to be easy to use, making it a great addition to any JavaScript or Node.js project that requires straightforward and effective handling of array-related tasks.
+
+#### It provides:
+
+- Toolbox to apply a basic math operations on array
+- Comparison operations
+- Statistic methods
 
 <!-- INSTALLATION -->
 
@@ -44,59 +54,13 @@ yarn
 yarn add @slauva/arops
 ```
 
-<!-- Documentations -->
+## Contributing
 
-## API References
-
-### Math operations
-
-#### Logic operations
-
-- [:gear: less](docs/logic.md#gear-less)
-- [:gear: greater](docs/logic.md#gear-greater)
-- [:gear: equal](docs/logic.md#gear-equal)
-- [:gear: all](docs/logic.md#gear-all)
-- [:gear: some](docs/logic.md#gear-some)
-- [:gear: condition](docs/logic.md#gear-condition)
-
-#### Trigonometric functions
-
-- [:gear: cos](docs/maths.md#gear-cos)
-- [:gear: sin](docs/maths.md#gear-sin)
-- [:gear: tan](docs/maths.md#gear-tan)
-- [:gear: arccos](docs/maths.md#gear-arccos)
-- [:gear: arcsin](docs/maths.md#gear-arcsin)
-- [:gear: arctan](docs/maths.md#gear-arctan)
-
-#### Hyperbolic functions
-
-- [:gear: cosh](#gear-cosh)
-- [:gear: sinh](docs/maths.md#gear-sinh)
-- [:gear: tanh](docs/maths.md#gear-tanh)
-- [:gear: arccosh](docs/maths.md#gear-arccosh)
-- [:gear: arcsinh](docs/maths.md#gear-arcsinh)
-- [:gear: arctanh](docs/maths.md#gear-arctanh)
-
-#### Rounding
-
-- [:gear: ceil](docs/maths.md#gear-ceil)
-- [:gear: floor](docs/maths.md#gear-floor)
-- [:gear: fround](docs/maths.md#gear-fround)
-- [:gear: round](docs/maths.md#gear-round)
-- [:gear: trunc](docs/maths.md#gear-trunc)
-
-#### Exponents and logarithms
-
-- [:gear: log](docs/maths.md#gear-log)
-- [:gear: log2](docs/maths.md#gear-log2)
-- [:gear: log10](docs/maths.md#gear-log10)
-- [:gear: exp](docs/maths.md#gear-exp)
-
-#### Arithmetic operations
-
-- [:gear: sqrt](docs/maths.md#gear-sqrt)
-- [:gear: power](docs/maths.md#gear-power)
-- [:gear: abs](docs/maths.md#gear-abs)
+1. Fork it (<https://github.com/Slauva/arops/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'feat: Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

@@ -1,2 +1,2 @@
-export * from "./logic";
-export * as math from "./maths/basics";
+export * from "./comparison";
+export * from "./maths/basics";

@@ -1,4 +1,4 @@
-import { less, greater, equal, all, some, condition } from "../src/logic";
+import { less, greater, equal, all, some, condition } from "../src/comparison";
 import { TokenError } from "../src/error";
 
 describe("Boolean login operator for arrays", () => {

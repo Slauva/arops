@@ -1,6 +1,6 @@
 {
   "name": "@slauva/arops",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "A simple and lightweight library of utilities for working with arrays",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -24,6 +24,7 @@
     "boolean logic",
     "boolean"
   ],
+  "homepage": "https://slauva.github.io/arops/",
   "repository": {
     "url": "git+https://github.com/Slauva/arops.git"
   },
