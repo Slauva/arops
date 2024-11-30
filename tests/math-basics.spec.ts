@@ -72,7 +72,7 @@ describe("Test Basic Maths Operations", () => {
       expect(values[i]).toBeCloseTo(target[i], 6);
     });
   });
-  //////////////////////////
+
   test("Test cosh()", () => {
     const values = math.cosh([0, 1, -1]);
     const target = [1, 1.543080634815244, 1.543080634815244];

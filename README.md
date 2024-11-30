@@ -30,7 +30,7 @@
 
 <!-- INSTALLATION -->
 
-### Installation
+## Installation
 
 npm
 
@@ -46,11 +46,11 @@ yarn add @slauva/arops
 
 <!-- Documentations -->
 
-### API References
+## API References
+
+### Math operations
 
 #### Logic operations
-
-[Goto referencies](docs/logic.md)
 
 - [:gear: less](docs/logic.md#gear-less)
 - [:gear: greater](docs/logic.md#gear-greater)
@@ -59,34 +59,44 @@ yarn add @slauva/arops
 - [:gear: some](docs/logic.md#gear-some)
 - [:gear: condition](docs/logic.md#gear-condition)
 
-#### Math operations
+#### Trigonometric functions
 
-[Goto referencies](docs/maths.md)
-
-- [:gear: abs](docs/maths.md#gear-abs)
-- [:gear: sqrt](docs/maths.md#gear-sqrt)
-- [:gear: log](docs/maths.md#gear-log)
-- [:gear: log2](docs/maths.md#gear-log2)
-- [:gear: log10](docs/maths.md#gear-log10)
-- [:gear: power](docs/maths.md#gear-power)
 - [:gear: cos](docs/maths.md#gear-cos)
 - [:gear: sin](docs/maths.md#gear-sin)
 - [:gear: tan](docs/maths.md#gear-tan)
 - [:gear: arccos](docs/maths.md#gear-arccos)
 - [:gear: arcsin](docs/maths.md#gear-arcsin)
 - [:gear: arctan](docs/maths.md#gear-arctan)
+
+#### Hyperbolic functions
+
 - [:gear: cosh](#gear-cosh)
 - [:gear: sinh](docs/maths.md#gear-sinh)
 - [:gear: tanh](docs/maths.md#gear-tanh)
 - [:gear: arccosh](docs/maths.md#gear-arccosh)
 - [:gear: arcsinh](docs/maths.md#gear-arcsinh)
 - [:gear: arctanh](docs/maths.md#gear-arctanh)
-- [:gear: exp](docs/maths.md#gear-exp)
+
+#### Rounding
+
 - [:gear: ceil](docs/maths.md#gear-ceil)
 - [:gear: floor](docs/maths.md#gear-floor)
 - [:gear: fround](docs/maths.md#gear-fround)
 - [:gear: round](docs/maths.md#gear-round)
 - [:gear: trunc](docs/maths.md#gear-trunc)
+
+#### Exponents and logarithms
+
+- [:gear: log](docs/maths.md#gear-log)
+- [:gear: log2](docs/maths.md#gear-log2)
+- [:gear: log10](docs/maths.md#gear-log10)
+- [:gear: exp](docs/maths.md#gear-exp)
+
+#### Arithmetic operations
+
+- [:gear: sqrt](docs/maths.md#gear-sqrt)
+- [:gear: power](docs/maths.md#gear-power)
+- [:gear: abs](docs/maths.md#gear-abs)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
