@@ -54,6 +54,38 @@ yarn
 yarn add @slauva/arops
 ```
 
+<!-- USAGE EXAMPLE -->
+
+## Usage Example
+
+```js
+import { condition } from "@slauva/arops";
+
+const array = [0, 1, 2, 3, 4, 3, 2, 1, 0];
+const out = condition(array, "1 <= x, x < 3");
+
+console.log(out);
+
+>> [false, true true, false, false, false, true, true, false]
+```
+
+```js
+import { power, sqrt } from "@slauva/arops";
+
+const array = [1, 2, 3, 4];
+const out = power(array, 2);
+
+console.log(out);
+
+>> [1, 4, 9, 16]
+
+const out_sqrt = sqrt(out);
+
+console.log(out_sqrt);
+
+>> [1, 2, 3, 4]
+```
+
 ## Contributing
 
 1. Fork it (<https://github.com/Slauva/arops/fork>)
