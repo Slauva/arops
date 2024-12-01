@@ -1,6 +1,6 @@
 {
   "name": "@slauva/arops",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "A simple and lightweight library of utilities for working with arrays",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

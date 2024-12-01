@@ -66,7 +66,7 @@ const out = condition(array, "1 <= x, x < 3");
 
 console.log(out);
 
->> [false, true true, false, false, false, true, true, false]
+>> [false, true, true, false, false, false, true, true, false]
 ```
 
 ```js
