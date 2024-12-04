@@ -35,3 +35,21 @@ export class ValueError extends Error {
     this.name = "ValueError";
   }
 }
+
+/**
+ * Represents an error related to invalid index rank.
+ *
+ * @extends {Error}
+ * @category Error
+ */
+export class IndexError extends Error {
+  /**
+   * Constructs a new IndexError instance.
+   *
+   * @param {string} message - The error message that provides details about the index error.
+   */
+  constructor(message: string) {
+    super(message);
+    this.name = "IndexError";
+  }
+}

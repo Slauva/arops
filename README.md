@@ -8,7 +8,7 @@
   <h3 align="center">Arops</h3>
 
   <p align="center">
-    A simple and lightweight library of utilities for working with arrays
+    A lightweight and efficient JavaScript library offering a suite of utilities for advanced array manipulation and operations.
     <br />
     <a href="https://slauva.github.io/arops/modules.html"><strong>Explore the docs »</strong></a>
     <br />
